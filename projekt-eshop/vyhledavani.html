@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vyhledávání — DrumShop</title>
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <header class="site-header"><div class="container wrap"><div class="brand"><a href="index.html" class="logo">DrumShop</a></div><nav class="site-nav"><a href="produkty.html">Produkty</a></nav></div></header>
+  <main class="container">
+    <h1>Vyhledávání</h1>
+    <div class="card">
+      <p class="muted">Zobrazím výsledky pro dotaz: <strong id="qterm">(není zadáno)</strong></p>
+      <div id="results"></div>
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if(q){ document.getElementById('qterm').textContent = q; }
+    else { document.getElementById('qterm').textContent = '(není zadáno)'; }
+  </script>
+
+  <footer class="site-footer"><div class="container">© 2026 DrumShop</div></footer>
+</body>
+</html>

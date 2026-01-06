@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Produkty — DrumShop</title>
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="container wrap">
+      <div class="brand">
+        <a href="index.html" class="logo">DrumShop</a>
+      </div>
+      <div class="search">
+        <form action="vyhledavani.html" method="get"><input type="search" name="q" placeholder="Hledat..."></form>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Domů</a>
+        <a href="kategorie.html">Kategorie</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="kosik-krok1.html" class="btn btn-ghost">Košík</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Produkty</h1>
+    <div style="display:flex; gap:1rem; margin-top:1rem;">
+      <aside style="width:220px">
+        <div class="card">
+          <h4>Filtr</h4>
+          <div class="muted">Kategorie</div>
+          <ul>
+            <li><a href="?category=sets" data-filter="sets">Sety</a></li>
+            <li><a href="?category=cymbals" data-filter="cymbals">Činely</a></li>
+            <li><a href="?category=drums" data-filter="drums">Bubny</a></li>
+            <li><a href="?category=hardware" data-filter="hardware">Hardware</a></li>
+            <li><a href="?category=sticks" data-filter="sticks">Paličky / kartáče</a></li>
+            <li><a href="?category=accessories" data-filter="accessories">Příslušenství</a></li>
+            <li><a href="?category=bags" data-filter="bags">Obaly</a></li>
+            <li><a href="?category=all" data-filter="all">Zobrazit vše</a></li>
+          </ul>
+        </div>
+      </aside>
+      <section style="flex:1">
+        <div class="product-list">
+          <!-- 30 product cards with data-category -->
+          <div class="card product-card" data-category="sets"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_6/102066_img_67a62d6517b67_1.jpg" alt="Standard Drum Set"></a><h3 class="title">Standard Drum Set</h3><div class="muted">5-dílný akustický set</div><div class="price">12 990 Kč</div><a href="produkty-detail.html?product=Standard+Drum+Set" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="sets"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_15/74815_img_4e8ec1147ce18_1.jpg" alt="Compact Jazz Set"></a><h3 class="title">Compact Jazz Set</h3><div class="muted">Pro menší prostory</div><div class="price">9 490 Kč</div><a href="produkty-detail.html?product=Compact+Jazz+Set" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="sets"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_7/99027_img_603d06880c297_debutkit.jpg" alt="Elektronický set"></a><h3 class="title">Elektronický set</h3><div class="muted">Tichý trénink, výstupy</div><div class="price">18 900 Kč</div><a href="produkty-detail.html?product=Elektronicky+set" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="drums"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_1/100381_img_63e242fa0a25a_mpnmp3600bmb.png" alt="Snare Drum"></a><h3 class="title">MAPEX</h3><div class="muted">MPX Maple/poplar 13x6"</div><div class="price">3 490 Kč</div><a href="produkty-detail.html?product=MAPEX+Snare" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="drums"><a class="thumb" href="produkty-detail.html"><img src="" alt="Bass Drum"></a><h3 class="title"></h3><div class="muted"></div><div class="price">6 990 Kč</div><a href="produkty-detail.html?product=MAPEX+Bass" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="drums"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum3.jpg" alt="Tom 10"></a><h3 class="title">Tom 10"</h3><div class="muted">Malý tom</div><div class="price">2 190 Kč</div><a href="produkty-detail.html?product=Tom+10" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="drums"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum1.jpg" alt="Tom 12"></a><h3 class="title">Tom 12"</h3><div class="muted">Střední tom</div><div class="price">2 490 Kč</div><a href="produkty-detail.html?product=Tom+12" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="drums"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum2.jpg" alt="Floor Tom 16"></a><h3 class="title">Floor Tom 16"</h3><div class="muted">Podlahový tom</div><div class="price">3 190 Kč</div><a href="produkty-detail.html?product=Floor+Tom+16" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="cymbals"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum3.jpg" alt="Hi-Hat 14"></a><h3 class="title">Hi-Hat 14"</h3><div class="muted">Otevřené i zavřené</div><div class="price">2 290 Kč</div><a href="produkty-detail.html?product=Hi-Hat+14" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="cymbals"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum1.jpg" alt="Crash 16"></a><h3 class="title">Crash 16"</h3><div class="muted">Jasný nárazový zvuk</div><div class="price">2 790 Kč</div><a href="produkty-detail.html?product=Crash+16" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="cymbals"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum2.jpg" alt="Ride 20"></a><h3 class="title">Ride 20"</h3><div class="muted">Stabilní rytmický zvuk</div><div class="price">3 990 Kč</div><a href="produkty-detail.html?product=Ride+20" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="cymbals"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum3.jpg" alt="Splash 8"></a><h3 class="title">Splash 8"</h3><div class="muted">Krátký jasný zásah</div><div class="price">1 190 Kč</div><a href="produkty-detail.html?product=Splash+8" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="cymbals"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum1.jpg" alt="China 18"></a><h3 class="title">China 18"</h3><div class="muted">Exotický zahuhlý tón</div><div class="price">3 290 Kč</div><a href="produkty-detail.html?product=China+18" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="sticks"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum2.jpg" alt="Drumsticks Pro"></a><h3 class="title">Drumsticks Pro</h3><div class="muted">Hickory paličky, pár</div><div class="price">290 Kč</div><a href="produkty-detail.html?product=Drumsticks+Pro" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="hardware"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum3.jpg" alt="Drum Throne"></a><h3 class="title">Drum Throne</h3><div class="muted">Pevné a pohodlné sedlo</div><div class="price">1 090 Kč</div><a href="produkty-detail.html?product=Drum+Throne" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="hardware"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum1.jpg" alt="Double Bass Pedal"></a><h3 class="title">Double Bass Pedal</h3><div class="muted">Pro dvounohou basu</div><div class="price">2 990 Kč</div><a href="produkty-detail.html?product=Double+Bass+Pedal" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="cymbals"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum2.jpg" alt="Cymbal Pack"></a><h3 class="title">Cymbal Pack</h3><div class="muted">Crash + Ride + Hi-Hat</div><div class="price">6 490 Kč</div><a href="produkty-detail.html?product=Cymbal+Pack" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="hardware"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum3.jpg" alt="Hardware Pack"></a><h3 class="title">Hardware Pack</h3><div class="muted">Stojany a uchycení</div><div class="price">3 190 Kč</div><a href="produkty-detail.html?product=Hardware+Pack" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="drums"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum1.jpg" alt="Rack Tom"></a><h3 class="title">Rack Tom 13"</h3><div class="muted">Přídavný tom</div><div class="price">2 290 Kč</div><a href="produkty-detail.html?product=Rack+Tom+13" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="accessories"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum2.jpg" alt="Practice Pad"></a><h3 class="title">Practice Pad</h3><div class="muted">Tichý tréninkový pad</div><div class="price">490 Kč</div><a href="produkty-detail.html?product=Practice+Pad" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="bags"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum3.jpg" alt="Drum Bag"></a><h3 class="title">Drum Bag</h3><div class="muted">Přepravní obal pro set</div><div class="price">990 Kč</div><a href="produkty-detail.html?product=Drum+Bag" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="bags"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum1.jpg" alt="Cymbal Bag"></a><h3 class="title">Cymbal Bag</h3><div class="muted">Ochranný obal na činely</div><div class="price">790 Kč</div><a href="produkty-detail.html?product=Cymbal+Bag" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="accessories"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum2.jpg" alt="Drum Key"></a><h3 class="title">Drum Key</h3><div class="muted">Nástroj pro ladění</div><div class="price">99 Kč</div><a href="produkty-detail.html?product=Drum+Key" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="sticks"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum3.jpg" alt="Brushes"></a><h3 class="title">Brushes</h3><div class="muted">Kartáče na jazzový styl</div><div class="price">249 Kč</div><a href="produkty-detail.html?product=Brushes" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="cajon"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum1.jpg" alt="Cajon Box"></a><h3 class="title">Cajon Box</h3><div class="muted">Dřevěný cajon</div><div class="price">2 190 Kč</div><a href="produkty-detail.html?product=Cajon+Box" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="drums"><a class="thumb" href="produkty-detail.html"><img src="../assets/images/drum2.jpg" alt="Marching Snare"></a><h3 class="title">Marching Snare</h3><div class="muted">Pro pochodovou kapelu</div><div class="price">4 490 Kč</div><a href="produkty-detail.html?product=Marching+Snare" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="sets"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_18/101898_img_6747409fdff85_img_2042.jpg" alt="Studio Kit"></a><h3 class="title">MAPEX</h3><div class="muted">MAPEX Comet BD20, T10, 12, F14, SD14</div><div class="price">15 490 Kč</div><a href="produkty-detail.html?product=Studio+Kit" class="btn btn-primary">Koupit</a></div>
+
+          <div class="card product-card" data-category="sets"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_16/93716_img_5a04459b5699d_p1.jpg" alt="Vintage Kit"></a><h3 class="title">PEARL</h3><div class="muted">PEARL Masterworks Heritage BD22, T10, 12, F16</div><div class="price">119 000 Kč</div><a href="produkty-detail.html?product=Vintage+Kit" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="sets"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_2/101362_img_67ebf61596e4d_11.jpg" alt="Junior Kit"></a><h3 class="title">DW</h3><div class="muted">DW DESIGN SERIES BD22, T10, 12, F14, 16 Limited Edition</div><div class="price">59 990 Kč</div><a href="produkty-detail.html?product=Junior+Kit" class="btn btn-primary">Koupit</a></div>
+          <div class="card product-card" data-category="sets"><a class="thumb" href="produkty-detail.html"><img src="https://www.drumcenter.cz/bin/goods_images/produkt_5/99525_img_61b70b5f207e8_aq1_studio_pw_1.jpg" alt="Pro Series Kit"></a><h3 class="title">SONOR</h3><div class="muted">SONOR AQ1 BD20, T10, 12, F14, SD14</div><div class="price">39 990 Kč</div><a href="produkty-detail.html?product=Pro+Series+Kit" class="btn btn-primary">Koupit</a></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 DrumShop</div>
+  </footer>
+  <script src="../assets/js/filter.js"></script>
+</body>
+</html>

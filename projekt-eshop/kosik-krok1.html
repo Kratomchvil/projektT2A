@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Košík — DrumShop</title>
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <header class="site-header"><div class="container wrap"><div class="brand"><a href="index.html" class="logo">DrumShop</a></div><nav class="site-nav"><a href="produkty.html">Produkty</a></nav></div></header>
+
+  <main class="container">
+    <h1>Košík — 1. rekapitulace</h1>
+    <div style="display:flex; gap:1rem; margin-top:1rem">
+      <section style="flex:1">
+        <div id="cart-items"></div>
+        <div style="margin-top:1rem">
+          <a href="produkty.html" class="btn btn-ghost">Pokračovat v nákupu</a>
+        </div>
+      </section>
+      <aside style="width:320px">
+        <div class="cart-summary card"></div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="../assets/js/shop.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      if(window.shopHelpers && typeof window.shopHelpers.renderCartFromQuery === 'function'){
+        window.shopHelpers.renderCartFromQuery('#cart-items');
+      }
+    });
+  </script>
+
+  <footer class="site-footer"><div class="container">© 2026 DrumShop</div></footer>
+</body>
+</html>

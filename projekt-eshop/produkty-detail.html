@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Standard Drum Set — DrumShop</title>
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container wrap">
+      <div class="brand"><a href="index.html" class="logo">DrumShop</a></div>
+      <nav class="site-nav"><a href="produkty.html">Produkty</a> <a href="kosik-krok1.html" class="btn btn-ghost">Košík</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="cart-steps">
+      <div class="step">1. Košík</div>
+      <div class="step">2. Doprava</div>
+      <div class="step">3. Platba</div>
+    </nav>
+
+    <section class="product-detail">
+      <div class="card">
+        <img src="../assets/images/drum1.jpg" alt="Standard Drum Set">
+      </div>
+      <aside class="card">
+        <h1>Standard Drum Set</h1>
+        <div class="muted">Plná sada pro začátečníky i pokročilé.</div>
+        <div class="price">12 990 Kč</div>
+        <p>Obsah: basový buben, tomy, small tom, hi-hat, činely, stojany, sedačka.</p>
+        <form action="kosik-krok1.html" method="get">
+          <label>Množství <input type="number" name="qty" value="1" min="1" max="999" step="1"></label>
+          <input type="hidden" name="product" value="Standard Drum Set">
+          <div style="margin-top:1rem">
+            <button class="btn btn-primary">Přidat do košíku</button>
+          </div>
+        </form>
+      </aside>
+    </section>
+  </main>
+</main>
+
+  <script src="../assets/js/shop.js"></script>
+  <footer class="site-footer"><div class="container">© 2026 DrumShop</div></footer>
+</body>
+</html>
